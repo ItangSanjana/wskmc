@@ -1,0 +1,113 @@
+<!--
+    Copyright 2013 Itang Sanjana
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Charset -->
+        <meta charset="utf-8">
+        <!-- Description -->
+        <meta name="description" content="Web Starter Kit with Material Components.">
+        <!-- Theme color -->
+        <meta name="theme-color" content="#6200ee">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Author -->
+        <link rel="author" href="/humans.txt" type="text/plain">
+        <!-- Icons -->
+        <link rel="icon" sizes="192x192" href="/icon-192.png">
+        <!-- Manifest -->
+        <link rel="manifest" href="/manifest.json">
+        <!-- Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://unpkg.com" crossorigin>
+        <!-- Preload styles -->
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
+        <link rel="preload" as="style" href="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.css">
+        <link rel="preload" as="style" href="/style.css">
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.css">
+        <link rel="stylesheet" href="/style.css">
+        <!-- Title -->
+        <title>WSK-MC</title>
+    </head>
+    <body class="mdc-typography">
+        <!-- Content -->
+        <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                    <span class="mdc-top-app-bar__title">WSK-MC</span>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Share" Title="Share" disabled>share</button>
+                </section>
+            </div>
+        </header>
+        <aside class="mdc-drawer mdc-drawer--modal">
+            <div class="mdc-drawer__header">
+                <h2 class="mdc-drawer__title">WSK-MC</h2>
+                <strong class="mdc-drawer__subtitle">@wskmc</strong>
+            </div>
+            <div class="mdc-drawer__content">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item mdc-list-item--activated" href="/" aria-current="page">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+                        <span class="mdc-list-item__text">Home</span>
+                    </a>
+                    <a class="mdc-list-item">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">history</i>
+                        <span class="mdc-list-item__text">History</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+        <div class="mdc-drawer-scrim"></div>
+        <main class="mdc-top-app-bar--fixed-adjust">
+            <section class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                        <div role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate">
+                            <div class="mdc-linear-progress__buffering-dots"></div>
+                            <div class="mdc-linear-progress__buffer"></div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                            <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <span class="mdc-linear-progress__bar-inner"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Utils -->
+        <div class="mdc-snackbar">
+            <div class="mdc-snackbar__surface">
+                <div class="mdc-snackbar__label" role="status" aria-live="polite"></div>
+                <div class="mdc-snackbar__actions">
+                    <button type="button" class="mdc-button mdc-snackbar__action">Close</button>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script defer src="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.js"></script>
+        <script defer src="/script.js"></script>
+    </body>
+</html>

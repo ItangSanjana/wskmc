@@ -1,0 +1,23 @@
+{
+  "name": "WSK-MC",
+  "short_name": "WSK-MC",
+  "description": "Web Starter Kit with Material Components.",
+  "background_color": "#fff",
+  "theme_color": "#6200ee",
+  "icons": [
+    {
+      "sizes": "48x48 96x96 144x144 192x192",
+      "src": "/icon-192.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "240x240 288x288 336x336 384x384 432x432 480x480 512x512",
+      "src": "/icon-512.png",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
+}
