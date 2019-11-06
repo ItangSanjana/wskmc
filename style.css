@@ -1,0 +1,87 @@
+/*
+    Copyright 2013 Itang Sanjana
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/
+
+/* Init */
+.visuallyhidden {
+    border: unset;
+    clip: rect(0 0 0 0);
+    margin: unset;
+    overflow: hidden;
+    padding: unset;
+    position: absolute;
+}
+body {
+    margin: unset;
+}
+embed, img:not([height]), object, svg, video {
+    height: auto;
+    max-width: 100%;
+}
+embed, img, object, svg, textarea, video {
+    vertical-align: middle;
+}
+input, textarea {
+    box-sizing: border-box;
+}
+
+/* MDC */
+.mdc-top-app-bar .mdc-top-app-bar__action-item:disabled,
+.mdc-top-app-bar .mdc-top-app-bar__navigation-icon:disabled {
+    color: var(--mdc-theme-text-disabled-on-dark);
+}
+ul.mdc-layout-grid__inner {
+    padding-left: unset;
+}
+
+/* Header */
+
+/* Nav */
+
+/* Main */
+
+/* Footer */
+
+/* Utils */
+
+/* Phone */
+@media (max-width: 479px) {
+    /* Main */
+    main .mdc-layout-grid:first-child:last-child > .mdc-layout-grid__inner {
+        align-items: center;
+        min-height: calc(100vh - 88px); /* header height + main padding (56px + 32px) */
+    }
+}
+
+/* Tablet */
+@media (min-width: 480px) and (max-width: 839px) {
+    /* Main */
+    main .mdc-layout-grid:first-child:last-child > .mdc-layout-grid__inner {
+        align-items: center;
+        min-height: calc(100vh - 96px); /* header height + main padding (64px + 32px) */
+    }
+}
+
+/* Desktop */
+@media (min-width: 840px) {
+    /* Main */
+    main .mdc-layout-grid:first-child:last-child > .mdc-layout-grid__inner {
+        align-items: center;
+        min-height: calc(100vh - 112px); /* header height + main padding (64px + 48px) */
+    }
+    main .mdc-layout-grid__cell--span-8:first-child:last-child {
+        grid-column-start: 3;
+    }
+}
